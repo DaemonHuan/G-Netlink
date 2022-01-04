@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendDestinationViewController">
+            <connections>
+                <outlet property="m_mapview" destination="eWo-lX-lbl" id="YFY-o8-MUC"/>
+                <outlet property="m_tableview" destination="Xgu-xt-XRQ" id="bRX-f4-HFG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_backgroud" translatesAutoresizingMaskIntoConstraints="NO" id="ldL-hA-t5I">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="qaF-Jv-YbN"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_seperateline01" translatesAutoresizingMaskIntoConstraints="NO" id="ztV-BN-zvc">
+                    <rect key="frame" x="0.0" y="61" width="320" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Z0a-cM-Oex"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWo-lX-lbl">
+                    <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xgu-xt-XRQ">
+                    <rect key="frame" x="8" y="63" width="304" height="227"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ErA-ab-T5k"/>
+                        <outlet property="delegate" destination="-1" id="2GL-XW-zfG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xgu-xt-XRQ" firstAttribute="height" secondItem="eWo-lX-lbl" secondAttribute="height" multiplier="0.45" id="0nF-1V-LYI"/>
+                <constraint firstItem="eWo-lX-lbl" firstAttribute="top" secondItem="ztV-BN-zvc" secondAttribute="bottom" id="HBb-TV-d30"/>
+                <constraint firstItem="ztV-BN-zvc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IS6-nX-Y0v"/>
+                <constraint firstItem="Xgu-xt-XRQ" firstAttribute="top" secondItem="ztV-BN-zvc" secondAttribute="bottom" id="JCX-xl-dV7"/>
+                <constraint firstItem="ldL-hA-t5I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U89-l1-yG2"/>
+                <constraint firstItem="Xgu-xt-XRQ" firstAttribute="top" secondItem="ztV-BN-zvc" secondAttribute="bottom" id="VsN-lY-LDa"/>
+                <constraint firstItem="eWo-lX-lbl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eHP-rI-8IN"/>
+                <constraint firstItem="Xgu-xt-XRQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="fzS-n7-imN"/>
+                <constraint firstAttribute="trailing" secondItem="ztV-BN-zvc" secondAttribute="trailing" id="hIT-rN-vUY"/>
+                <constraint firstItem="ztV-BN-zvc" firstAttribute="top" secondItem="ldL-hA-t5I" secondAttribute="bottom" id="hfA-YT-qIz"/>
+                <constraint firstItem="ldL-hA-t5I" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iWf-rn-UQb"/>
+                <constraint firstAttribute="trailing" secondItem="eWo-lX-lbl" secondAttribute="trailing" id="ojE-g2-PMy"/>
+                <constraint firstAttribute="bottom" secondItem="eWo-lX-lbl" secondAttribute="bottom" id="pBp-ZT-ToZ"/>
+                <constraint firstAttribute="trailing" secondItem="Xgu-xt-XRQ" secondAttribute="trailing" constant="8" id="wqe-Ft-JaZ"/>
+                <constraint firstAttribute="trailing" secondItem="ldL-hA-t5I" secondAttribute="trailing" id="xqT-jt-DZN"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <action selector="textfield_TouchDown:" destination="-1" eventType="touchDown" id="CDY-E0-NaN"/>
+            </connections>
+            <point key="canvasLocation" x="324" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="public_backgroud" width="1080" height="1920"/>
+        <image name="public_seperateline01" width="1080" height="2"/>
+    </resources>
+</document>
