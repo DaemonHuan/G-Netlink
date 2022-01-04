@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarLocationViewController">
+            <connections>
+                <outlet property="la_alert" destination="toe-bS-mzb" id="Si5-aM-AC1"/>
+                <outlet property="m_mapview" destination="i7u-cB-kHY" id="7W3-fM-LMb"/>
+                <outlet property="vi_alert" destination="ggm-QU-cwL" id="JSt-UZ-A49"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_backgroud" translatesAutoresizingMaskIntoConstraints="NO" id="QX7-0T-d2Q">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="61" id="SwY-U8-77C"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_seperateline01" translatesAutoresizingMaskIntoConstraints="NO" id="AFx-bj-YGb">
+                    <rect key="frame" x="0.0" y="61" width="320" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Ibz-2q-Ndz"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7u-cB-kHY">
+                    <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggm-QU-cwL">
+                    <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vctl_alertview" translatesAutoresizingMaskIntoConstraints="NO" id="ask-zC-Bv3">
+                            <rect key="frame" x="60" y="147" width="200" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="dkb-so-2Au"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toe-bS-mzb">
+                            <rect key="frame" x="60" y="147" width="200" height="90"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="toe-bS-mzb" firstAttribute="trailing" secondItem="ask-zC-Bv3" secondAttribute="trailing" id="0mI-VK-Kzr"/>
+                        <constraint firstItem="ask-zC-Bv3" firstAttribute="centerX" secondItem="ggm-QU-cwL" secondAttribute="centerX" id="4Vd-s5-F24"/>
+                        <constraint firstItem="toe-bS-mzb" firstAttribute="leading" secondItem="ask-zC-Bv3" secondAttribute="leading" id="FK6-vo-buz"/>
+                        <constraint firstAttribute="trailing" secondItem="ask-zC-Bv3" secondAttribute="trailing" constant="60" id="I0p-lI-cTx"/>
+                        <constraint firstItem="toe-bS-mzb" firstAttribute="height" secondItem="ask-zC-Bv3" secondAttribute="height" multiplier="0.6" id="ZxQ-LJ-ctq"/>
+                        <constraint firstItem="ask-zC-Bv3" firstAttribute="leading" secondItem="ggm-QU-cwL" secondAttribute="leading" constant="60" id="aym-BF-gXQ"/>
+                        <constraint firstItem="ask-zC-Bv3" firstAttribute="top" secondItem="ggm-QU-cwL" secondAttribute="top" constant="147" id="gOo-Ec-oVm"/>
+                        <constraint firstItem="toe-bS-mzb" firstAttribute="top" secondItem="ask-zC-Bv3" secondAttribute="top" id="nf4-SN-4Nj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="i7u-cB-kHY" secondAttribute="bottom" id="48n-5R-Swr"/>
+                <constraint firstAttribute="trailing" secondItem="ggm-QU-cwL" secondAttribute="trailing" id="5Zk-FU-Cg5"/>
+                <constraint firstAttribute="trailing" secondItem="QX7-0T-d2Q" secondAttribute="trailing" id="8vn-In-BC3"/>
+                <constraint firstItem="QX7-0T-d2Q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="92i-81-1tH"/>
+                <constraint firstItem="i7u-cB-kHY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WzJ-YO-De0"/>
+                <constraint firstItem="ggm-QU-cwL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ahA-Zc-vaH"/>
+                <constraint firstItem="AFx-bj-YGb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fGB-EB-opw"/>
+                <constraint firstAttribute="trailing" secondItem="AFx-bj-YGb" secondAttribute="trailing" id="g4v-7D-eBw"/>
+                <constraint firstItem="ggm-QU-cwL" firstAttribute="top" secondItem="AFx-bj-YGb" secondAttribute="bottom" id="o9K-aG-IYr"/>
+                <constraint firstAttribute="bottom" secondItem="ggm-QU-cwL" secondAttribute="bottom" id="rOc-gr-Ubs"/>
+                <constraint firstAttribute="trailing" secondItem="i7u-cB-kHY" secondAttribute="trailing" id="rw3-Ix-MBG"/>
+                <constraint firstItem="i7u-cB-kHY" firstAttribute="top" secondItem="AFx-bj-YGb" secondAttribute="bottom" id="uDd-Wd-bp8"/>
+                <constraint firstItem="QX7-0T-d2Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="v32-v1-V5r"/>
+                <constraint firstItem="AFx-bj-YGb" firstAttribute="top" secondItem="QX7-0T-d2Q" secondAttribute="bottom" id="xxS-yR-FEf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="386" y="176"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="public_backgroud" width="1080" height="1920"/>
+        <image name="public_seperateline01" width="1080" height="2"/>
+        <image name="vctl_alertview" width="226" height="117"/>
+    </resources>
+</document>
