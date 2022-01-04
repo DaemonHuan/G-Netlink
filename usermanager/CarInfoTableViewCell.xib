@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CarInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxU-UT-nwY">
+                        <rect key="frame" x="16" y="8" width="70" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Tbx-Ky-TvA"/>
+                            <constraint firstAttribute="height" constant="30" id="rzE-tc-qkK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uctl_car" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-tw-FUb">
+                        <rect key="frame" x="243" y="13" width="25" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CJG-xh-ycw"/>
+                            <constraint firstAttribute="width" constant="25" id="lVh-tG-MhA"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uctl_into" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-ML-dNe">
+                        <rect key="frame" x="292" y="15" width="12" height="15"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="9zy-WZ-zkH"/>
+                            <constraint firstAttribute="height" constant="15" id="TVs-eh-s6D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-j7-efM">
+                        <rect key="frame" x="118" y="8" width="117" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="urk-gX-oAE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5cs-tw-FUb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="F3r-OA-sEV"/>
+                    <constraint firstItem="iFR-j7-efM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Koh-Rs-qin"/>
+                    <constraint firstItem="5cs-tw-FUb" firstAttribute="leading" secondItem="iFR-j7-efM" secondAttribute="trailing" constant="8" id="Qrh-MM-fCA"/>
+                    <constraint firstItem="WxU-UT-nwY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="RIK-lf-44a"/>
+                    <constraint firstItem="IXK-ML-dNe" firstAttribute="leading" secondItem="5cs-tw-FUb" secondAttribute="trailing" constant="24" id="STD-RH-m2g"/>
+                    <constraint firstItem="IXK-ML-dNe" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-8" id="Y18-sl-Gig"/>
+                    <constraint firstItem="iFR-j7-efM" firstAttribute="leading" secondItem="WxU-UT-nwY" secondAttribute="trailing" constant="32" id="YhF-CL-cbi"/>
+                    <constraint firstItem="WxU-UT-nwY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nTO-Ei-gAZ"/>
+                    <constraint firstItem="IXK-ML-dNe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="op0-U5-79z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iv_car" destination="5cs-tw-FUb" id="cjn-wB-21C"/>
+                <outlet property="iv_in" destination="IXK-ML-dNe" id="Zqh-s1-vF9"/>
+                <outlet property="la_title" destination="WxU-UT-nwY" id="YTa-CH-iOE"/>
+                <outlet property="la_value" destination="iFR-j7-efM" id="W3G-Ox-mAw"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uctl_car" width="15" height="12"/>
+        <image name="uctl_into" width="5" height="9"/>
+    </resources>
+</document>
